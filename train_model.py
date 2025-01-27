@@ -2,7 +2,7 @@ import os
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from twisted.mail.imap4 import encoder
+
 
 from ml.data import process_data
 from ml.model import (

@@ -19,10 +19,8 @@ Determine if a person makes over 50k a year based on comparison of following cha
     - "sex",
     - "native-country"
 
-
 ## Training Data
 Used 80% of the original dataset for the training purposes.
-
 
 ## Evaluation Data
 Used 20% of the original dataset for evaluation purposes.

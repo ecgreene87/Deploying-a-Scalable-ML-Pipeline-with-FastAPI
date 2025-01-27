@@ -26,6 +26,7 @@ class Data(BaseModel):
     hours_per_week: int = Field(..., example=40, alias="hours-per-week")
     native_country: str = Field(..., example="United-States", alias="native-country")
 
+project_path = os.getcwd()
 path = os.path.join(project_path, "model", "encoder.pkl") #path for the saved encoder
 encoder = load_model(path)
 
@@ -36,10 +37,10 @@ model = load_model(path)
 app = FastAPI() # your code here
 
 # TODO: create a GET on the root giving a welcome message
-@app.get("/welcome")
+@app.get("/")
 async def get_root():
     """ Say hello!"""
-    return {"welcome": "to the model API"}
+    return {"message": "Welcome to the model API"}
 
 
 # TODO: create a POST on a different path that does model inference

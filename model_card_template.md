@@ -18,6 +18,8 @@ Determine if a person makes over 50k a year based on comparison of following cha
     - "race",
     - "sex",
     - "native-country"
+
+
 ## Training Data
 Used 80% of the original dataset for the training purposes.
 
@@ -27,9 +29,9 @@ Used 20% of the original dataset for evaluation purposes.
 
 ## Metrics
 Evaluated three metrics:
-    -f1 score
-    -precision score
-    -recall score
+    -f1 score (0.6789)
+    -precision score (0.7376)
+    -recall score (0.6288)
 
 ## Ethical Considerations
 The dataset may be flawed because we did not consider any outliers.
